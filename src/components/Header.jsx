@@ -1,19 +1,22 @@
 import React, {useState} from "react";
 
-const Header = ( input, setInputs ) => {
+
+const Header = ( inputs, setInputs ) => {
     const [todo, setTodo] = useState("")
+    
     const handleSubmit = (e) => {
         e.preventdefault();
 
         const id = new Data().getTime();
         const newTodo = {id : id, todo : todo, isDone : false}
+        setInputs([...inputs, newTodo])
     }
 
 
   return (
     <div className="flex flex-col items-center justify-center mt-11">
       <h2 className="text-2xl">React Todo List</h2>
-      <form className="mt-3 flex flex-col">
+      <form className="mt-3 flex flex-col" onSubmit={handleSubmit}>
         <input
           type="text"
           name="todo"

@@ -3,6 +3,7 @@ import Header from './Header'
 import Todo from './Todo'
 
 const Home = () => {
+    const [inputs, setInputs] = useState("")
   return (
     <div>
         <Header />
