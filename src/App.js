@@ -1,9 +1,10 @@
-import Todo from './components/Todo'
+
+import Home from './components/Home';
 
 function App() {
   return (
     <div className="App">
-      <Todo />
+      <Home/>
     </div>
   );
 }
