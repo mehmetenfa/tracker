@@ -1,4 +1,4 @@
-import Header from "./Header";
+
 import Todo from "./Todo";
 import { useState, useEffect } from "react";
 
@@ -19,7 +19,7 @@ const Home = () => {
 
   return (
     <div>
-      <Header inputs={inputs} setInputs={setInputs} />
+      
       <Todo inputs={inputs} deleteItem={deleteItem} />
     </div>
   );
