@@ -56,7 +56,7 @@ const App = () => {
                   className="text-xl cursor-pointer"
                   onClick={() => handleDelete(item)}
                 />
-                <RiEdit2Fill className="text-xl cursor-pointer" onSubmit={() => handleUpdate(idx)} />
+                <RiEdit2Fill className="text-xl cursor-pointer" onSubmit={handleUpdate} />
               </div>
             </div>
           ))}
